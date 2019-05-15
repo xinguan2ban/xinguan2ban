@@ -1,0 +1,43 @@
+function clickme(){
+	alert("hello word");
+}
+ function count(){
+       
+   
+    var a=parseInt(document.getElementById('txt1').value);
+	var b=parseInt(document.getElementById('txt2').value);
+	
+	
+    var select=document.getElementById('select').value;
+   
+    if (!(isNaN(txt1.value)||isNaN(txt2.value))) {
+    
+    	if(select==0)
+    	document.getElementById('rest').value=a+b;
+    	
+        else if(select==1)
+    	document.getElementById('rest').value=a-b;
+   
+    	
+    	else if(select==2)
+    	document.getElementById('rest').value=a*b;
+   
+    	else if(select==3)
+    	document.getElementById('rest').value=a/b;
+   
+    
+    
+    	}
+   
+   
+   else{
+   	alert("请输入正确的数字");
+   }
+   
+   
+    }
+    
+   
+    
+
+ 

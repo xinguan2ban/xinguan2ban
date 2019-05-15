@@ -1,0 +1,35 @@
+#form1 table {
+ color: #000000;
+ font-size:14px;
+ width: 400px;
+ background-color:white;
+ border: 1px solid #ff6600
+}
+#form1 th {
+ font-size: 14px;
+ color: #ffffff;
+ background-color: #ff6600;
+}
+#form1 th,td {
+ padding: 3px;
+}
+#reg {
+ width: 400px;
+ left: 32%;
+ position: absolute;
+}
+#form1 tfoot td {
+ background-color: #ff6600;
+ text-align: center;
+}
+.formstyle {
+ font-size: 13px;
+ border: 1px solid #666666;
+}
+
+
+function check(obj){ 
+if (isNaN(obj.value)) 
+{alert("请输入数字！"); 
+obj.value="";} 
+} 
