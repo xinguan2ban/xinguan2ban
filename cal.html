@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>计算器</title>
+		<script type="text/javascript" src="js/cal.js">
+		</script>
+	</head>
+
+	<body>
+		<div class="content" align="center">
+
+			<div class="header">
+				<h1>简易计算器</h1>
+			</div>
+			
+			<br />
+			<br />
+			
+			<input type="text" id="num1" placeholder="第一个数" />
+			<select id='select'>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input type="text" id="num2" placeholder="第二个数" />
+			<input type="submit" value="=" onclick="count()" />
+			<input type="text" id="result" />
+			
+			
+			
+		</div>
+	</body>
+
+</html>
