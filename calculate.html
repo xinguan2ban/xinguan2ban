@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<script type="text/javascript" src="js/calculate.js"></script>
+	</head>
+	<body>
+		
+		
+		<input type="text" name="text" id="pre" onblur="validate(this.value);">
+<select id="operator">
+	<option value="+">+</option>
+	<option value="-">-</option>
+	<option value="*">*</option>
+	<option value="/">/</option>
+</select>
+<input type="text" name="text" id="next" onblur="validate(this.value);">
+<span>=</span>
+<input type="text" id="result" readonly="true">
+<input type="button" id="btn" value="click" onclick="calculator();">
+
+
+	</body>
+</html>

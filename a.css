@@ -1,0 +1,91 @@
+/** {
+  box-sizing: border-box;
+}
+h1{
+	font-family: 楷体;
+	text-align: center;
+}
+
+
+.box{
+	text-align: center;
+}
+
+
+#username,#password{
+	font-size: 24px;
+}
+
+input[type=submit]{
+	width: 20px;
+	height: 20px;
+	font-size: 24px;
+	background: red;
+}*/
+*{
+
+ margin: 0;
+
+ padding: 0;
+
+ font-family: 微软雅黑;
+
+ font-size: 12px;
+
+}
+
+.box{
+
+ width: 390px;
+
+ height: 320px;
+
+ border: solid 1px #ddd;
+
+ background: #FFF;
+
+ position: absolute;
+
+ left: 50%;
+
+ top:42%;
+
+ margin-left: -195px;
+
+ margin-top: -160px;
+
+ text-align: center;
+
+}
+
+.box h2{
+
+ font-weight: normal;
+
+ color:#666;
+
+ font-size: 16px;
+
+ line-height: 40px;
+
+ overflow: hidden;
+
+ text-align: center;
+
+ border-bottom: solid 1px #ddd;
+
+ background: #f7f7f7;
+
+}
+
+.input_box{
+
+ width:350px;
+
+ padding-bottom: 15px;
+
+ margin: 0 auto;
+
+ overflow: hidden;
+
+}
