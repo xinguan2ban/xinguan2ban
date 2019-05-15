@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script type="text/javascript" src="js/index.js"></script>
+	<body>
+		<form >
+			
+			<input type="text" id="num1" placeholder="第一个数" size="20" onkeyup="check(this);"/>
+		<select id="cal">
+			<option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+			</select>
+			<input type="text" id="num2" placeholder="第二个数"  size="20" onkeyup="check(this);"/>
+			<input type="button" value="=" onclick="count()" />
+			<input type="text" id="num3" placeholder="结果"  size="20" />
+		</form>
+	</body>
+</html>

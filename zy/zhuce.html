@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/zhuce.css" rel="stylesheet"/>
+		<style type="text/css" ></style>
+			<script type="text/javascript" src="js/zhuce.js"></script>
+	</head>
+	<body>
+		<div id="a" align="center">注册表</div>
+		<center>
+		<br>
+		<input type="text" id="username"  placeholder="username" size="50" >
+		</br>
+		<br>
+				<input type="text" id="password"  placeholder="password" size="50" >
+				</br>
+		<br>
+		<form>
+			性别：
+			<input name="sex" type="radio" value="nv" />女
+			<input name="sex" type="radio" value="nan" />男
+		</form>
+		</br>
+		<form>
+			您是:
+			<input type="radio" name="age" value="90"/>90后
+            <input type="radio" name="age" value="00"/>00后
+            <input  type="radio" name="age" value="else"/>其他
+		</form>
+		<form>
+			请选择您的出生日期:
+			<input type="date">
+			
+		</form>
+		
+		<br>
+		<form>
+			请选择您的职业：
+			<select>
+				<option>学生</option>
+				<option>教师</option>
+				<option>白领</option>
+				<option>医生</option>
+				<option>其他</option>
+			</select>
+		</form>
+		</br>
+			<form>联系方式：
+			<input type="text"  name="tel"  placeholder="telephone" onkeyup="check(this);" maxlength="11"/>
+			</form>
+		<br>
+			<form>
+				爱好:
+				<input name="checkbox" type="checkbox" value="学习">学习
+            <input name="checkbox2" type="checkbox" value="看书">看书
+         <input name="checkbox3" type="checkbox" value="做作业">做作业
+         <input name="checkbox" type="checkbox" value="睡觉">睡觉
+			</form>
+		</br>
+		</center>
+	</body>
+</html>
