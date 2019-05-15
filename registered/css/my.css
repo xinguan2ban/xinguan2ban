@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+h1{
+	font-family: 楷体;
+	font-size: 48px;
+    text-align: center;
+    color: orange;	
+}
+
+#password,#usernmae{
+	font-size: 25px;
+	width:250px;
+	height:25px;
+}
+
+.box{
+	text-align: center;
+}
+
+input[type=button]{
+	font-family: 楷体;
+	font-size: 20px;
+	width:200px;
+}
+
+#phone{
+	width:195px;
+}
+
+select{
+	width:130px;
+	height: 25px;
+}
