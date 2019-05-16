@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>	
+<head>		
+<meta charset="UTF-8">	
+<title></title>	
+<script>						
+		
+	function checkForm(){
+ var inputObj = document.getElementById("username");	
+ if(uValue.length < 6 ){		
+ alert("对不起,您输入的账号长度太短了");		
+ return false;					}	
+
+ 
+ var input_password = document.getElementById("password");	
+ var uPass = input_password.value;						
+ if(uPass.length < 6){			
+ alert("对不起,您输入的密码长度太短了");		
+ return false;			
+ }								
+	var input_repassword = document.getElementById("repassword");	
+	var uRePass = input_repassword.value;		
+	if(uPass != uRePass){				
+	alert("对不起,两次密码不一致!");		
+	return false;	
+	}				
+	var input_mobile = document.getElementById("mobile");	
+	var uMobile = input_mobile.value;				
+			if(!/^[1][3578][0-9]{9}$/.test(uMobile)){		
+			alert("对不起,您的手机号无法识别，请重新输入");			
+			return false;				}				
+			//校验邮箱: /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/			
+			var inputEmail = document.getElementById("email");			
+			var uEmail = inputEmail.value;							
+			if(!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(uEmail)){	
+			alert("对不起,邮箱不合法，请重新输入");				
+			return false;				}					
+			return true;			}			
+</script>	
+</head>	
+<body>		
+<form action="网站首页.html" onsubmit="return checkForm()">		
+<div>用户名:<input id="username" type="text"  /></div>		
+<div>密码:<input id="password" type="password"  /></div>		
+<div>确认密码:<input id="repassword" type="password"  /></div>		
+<div>手机号码:<input id="mobile"  type="number"  /></div>			
+<div>邮箱:<input id="email" type="text"  /></div>	
+<div><input type="submit" value="注册"  /></div>	
+</form>
+
+
+
+</body>
+</html> 

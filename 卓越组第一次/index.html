@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="css/my.css" rel="stylesheet" >
+		<script type="text/javascript" src="js/cal.js"></script>
+		<script type="text/ecmascript" src="js/regist.js" ></script>
+	
+	</head>
+	<body>
+	<div class="a" align="center">
+		<h1>注册</h1>
+		<hr />
+		<div class="box">
+			<form action="#" method="post" enctype="" onsubmit="">
+			<input type="text" name="username" id="username" placeholder="username" onblur="checkUsername()"/>
+			<span id="usernameSpan"></span><br /><br />
+
+			<input type="password" name="password" id="password" placeholder="password" onblur="checkPassword()" />
+			<span id="passwordSpan"></span><br /><br />
+			
+			<input type="email" name="email" id="email" placeholder="email"/><br /><br />
+			
+			<input type="radio" value="nan" name="gender"  />男&emsp;&emsp;
+			<input type="radio" value="nv" name="gender"  />女
+			
+			<br /><br />
+			
+			<input type="checkbox" value="吃" name="likes" checked="checked" />吃
+			<input type="checkbox" value="喝" name="likes" checked="checked" />喝
+			<input type="checkbox" value="玩" name="likes" checked="checked" />玩
+			<input type="checkbox" value="乐" name="likes" checked="checked" />乐<br /><br />
+			
+			出生日期：<input type="date" name="date" /><br /><br />
+			
+			学历：<select name="diploma">
+				<option value="primary">小学</option>
+				<option value="middle">中学</option>
+				<option value="university">大学</option>
+			</select>&emsp;<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span><br /><br />
+			
+			<textarea></textarea><br /><br />
+
+			<input type="checkbox" name="agree" style="margin-left:100px;display:inline-block;" value="1"/>
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <span style="font-size:10px;">我已阅读并同意《用户注册协议》</span><br/><br/>
+            <button type="submit" class="btn btn-lg btn-warning">同意以上协议并注册</button>
+            
+			
+			</form>
+		</div>
+		<span calss="glyphicon glyphicon-yen" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-cloud" aria-hidden="true" style="width:20px;height: 10px;"></span>
+		</div>
+	</body>
+</html>
+
+
