@@ -1,0 +1,33 @@
+@charset "utf-8";
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #848484;
+  background-color: #f0f0f0;
+}
+
+h1{
+	font-family: 楷体;
+	font-size: 48px;
+	color: pink;
+text-align: center;
+
+}
+hr{
+	width: 80%;
+}
+.box{
+	text-align: center;
+}
+#username,#password{
+	font-size:24px ;
+}
+input[type=submit]{
+	width: 200px;
+	height: 45px;
+	font-size: 24px;
+	background-color: lightgray;
+	
+}
+
