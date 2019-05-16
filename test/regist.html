@@ -1,0 +1,132 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>正则表达式表单验证</title>
+		<style type="text/css">
+			table {
+				background-color: #E7EEEF;
+				border: 2px #A7D7C4 solid;
+			}
+		</style>
+	</head>
+
+	<body>
+		<center>
+			<form action="login.html" method="post" onsubmit="return isForm()">
+				<h2 style="font-size:36px;font-family: 楷体;color:#74B49B">注册页面</h2>
+				<table border="1px" width="360px" height="500px">
+					<tr>
+						<td>
+							账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：
+							<input type="text" name="username" id="user" />
+							<div id="error1" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：
+							<input type="password" name="password" id="pw" />
+							<div id="error2" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+							<input type="text" name="name1" id="name" />
+							<div id="error3" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：
+							<input type="radio" name="sex" value="boy" />男
+							<input type="radio" name="sex" value="girl" />女
+						</td>
+					</tr>
+					<tr>
+						<td>
+							年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：
+							<input type="text" name="age" id="ag" />
+							<div id="error4" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							电子邮件：<input type="text" name="email" id="em" />
+							<div id="error5" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							电话号码：<input type="text" name="telephone" id="tel" />
+							<div id="error6" style="display:inline;color:red;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<input style="font-size:26px;font-family: 楷体;" type="submit" value="注册" />
+						</td>
+					</tr>
+				</table>
+			</form>
+			<script language="javascript">
+				function isForm() {
+					var username = document.getElementById("user").value;
+					var password = document.getElementById("pw").value;
+					var name = document.getElementById("name").value;
+					var age = document.getElementById("ag").value;
+					var email = document.getElementById("em").value;
+					var telephone = document.getElementById("tel").value;
+
+					var error1 = document.getElementById("error1");
+					var error2 = document.getElementById("error2");
+					var error3 = document.getElementById("error3");
+					var error4 = document.getElementById("error4");
+					var error5 = document.getElementById("error5");
+					var error6 = document.getElementById("error6");
+
+					var username1 = /^[a-z]{6,10}/i;
+					var password1 = /^[0-9]{6,10}/;
+					var name1 = /^[a-z]{6,10}/i;
+					var age1 = /^[1-9]{1}[0-9]{0,1}$/;
+					var email1 = /^[\w]+(\.[\w]+)*@[\w]+(\.[\w]+)+$/;
+					var telephone1 = /^[1]{1}[0-9]{10}/;
+
+					if(!username1.test(username)) {
+						alert("请输出6-10位字母");
+						return false;
+					}
+					error1.innerHTML = "输入正确";
+					if(!password1.test(password)) {
+						alert("请输入6-10的数字密码");
+						return false;
+					}
+					error2.innerHTML = "输入正确";
+					if(!name1.test(name)) {
+						alert("请输入6-10位字母");
+						return false;
+					}
+					error3.innerHTML = "输入正确";
+					if(!age1.test(age)) {
+						alert("请输入合法的年龄");
+						return false;
+					}
+					error4.innerHTML = "输入正确";
+					if(!email1.test(email)) {
+						alert("请输入合法电子邮件");
+						return false;
+					}
+					error5.innerHTML = "输入正确";
+					if(!telephone1.test(telephone)) {
+						alert("请输人电话联系方式");
+						return false;
+					}
+					error6.innerHTML = "输入正确";
+					return true;
+				}
+			</script>
+		</center>
+	</body>
+
+</html>

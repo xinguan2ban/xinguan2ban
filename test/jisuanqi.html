@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+        <script type="text/javascript" src="js/jisuanqi.js"></script>     
+	</head>
+
+<body>
+<p>简单计算器:</p>
+<table style="margin-left:2px;" border="1" style="position:center;">
+  <tr>
+    <td>第一个数：</td>
+    <td><input type="text" id="first"/></td>
+  </tr>
+  <tr>
+    <td>第二个数：</td>
+    <td><input type="text" id="twice"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" >
+      &nbsp;
+      <button style="width:inherit" onclick="add()">+</button>
+      &nbsp;
+      <button style="width:inherit" onclick="subtract()">-</button>
+      &nbsp;
+      <button style="width:inherit" onclick="ride()">*</button>
+      &nbsp;
+      <button style="width:inherit" onclick="devide()">/</button>
+    </td>
+  </tr>
+  <tr>
+  	<td>结果：</td>
+    <td colspan="2" rowspan="2">
+      <p id="result"></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
