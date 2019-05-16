@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <style type="text/css">
+     table{
+         border:1px solid #10c6c4;
+         margin:0 auto;
+         width:450px;
+         height:180px;
+     }
+     tr{
+         border:1px solid #10c6c4;
+     }
+     td{
+         border:1px solid #10c6c4;
+     }
+     th{
+         border:1px solid #10c6c4;
+         text-align:center;
+         height:35px;
+     }
+     input[type=button]{
+         width:33px;
+         height: 33px;
+         margin:5px;
+         background: #11fffc;
+         border:1px solid #08d0ce;
+     }
+     input[type=text]{
+         width:210px;
+         height:25px;
+         margin-left:5px;
+         padding-left:5px;
+     }
+    </style>
+    <script type="text/javascript">
+       function yunsuan(op){
+           var n1=document.getElementById('num1').value;
+           var n2=document.getElementById('num2').value;
+           var jieguo=document.getElementById('jieguo').value;
+           n1=Number(n1);
+           n2=Number(n2);
+           switch(op){
+               case '+':
+                  jieguo=n1+n2;
+                  break;
+               case '-':
+                  jieguo=n1-n2;
+                  break;
+               case '*':
+                  jieguo=n1*n2;
+                  break;
+               case '/':
+                  jieguo=n1/n2;
+                  break;
+           }
+           document.getElementById('jieguo').value=jieguo;
+       }
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="3">简易计算器</th>
+        </tr>
+        <tr>
+            <td>第一个数</td>
+            <td><input type="text" id="num1"></td>
+            <td rowspan="4">
+                <input type="button" value="+" onclick="yunsuan('+')"><br>
+                <input type="button" value="-" onclick="yunsuan('-')"><br>
+                <input type="button" value="*" onclick="yunsuan('*')"><br>
+                <input type="button" value="/" onclick="yunsuan('/')"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>第二个数</td>
+            <td><input type="text" id="num2"></td>
+        </tr>
+        <tr>
+            <td>结果</td>
+            <td><input type="text" id="jieguo"></td>
+        </tr>
+        <tr>
+            <td colspan="2">运算方法：输两个数，再选算法</td>
+        </tr>
+    </table>
+</body>
+</html>
