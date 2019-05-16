@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册 </title>
+		<link type="text/css" href="css/my.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/reg.js"></script>
+	</head>
+	<body>
+		<h1>注册</h1>
+		<hr />
+		<div id="ti">
+			<form action="" method="post">
+				<b>账号: </b><input type="text" name="account" id="account" /><br />
+				<br />
+				<b>密码: </b><input type="password" name="password" id="password" /><br />
+				<br />	
+				<b>邮箱: </b><input type="email" name="email" id="email" /><br />
+				<br />
+				<b>手机: </b><input type="text" name="phonenumber" id="phonenumber" /><br />
+				<br />
+				<b>性别: </b>
+				<input type="radio" name="Gender" value="boy" />男
+				<input type="radio" name="Gender" value="girl" />女
+				<br />
+				<br />
+
+				<b>爱好: </b>
+				<label><input type="checkbox" name="like" value="0">跳</label>
+				<label><input type="checkbox" name="like" value="1">唱</label>
+				<label><input type="checkbox" name="like" value="2">rap</label>
+				<label><input type="checkbox" name="like" value="3">篮球</label>
+				<br />
+				
+				<input type="submit" value="注册" onclick="regcheck()" />
+			</form>
+			
+		</div>
+
+	</body>
+</html>
