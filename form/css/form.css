@@ -1,0 +1,36 @@
+body{
+	color: white;
+	background-color: #006699;
+}
+
+p{
+	font-size: 40px;
+}
+
+.msg{
+	border:2px white solid;
+	margin-bottom: 30px;
+	width: 400px;
+	border-radius: 20%;
+	position: relative;
+	z-index: 1;
+}
+
+.msg .user{
+	width: 80px;
+	height: 15px;
+	font-size: 16px;
+	position: relative;
+	top: -30px;
+	z-index: 3;
+	background-color: #006699;
+}
+
+.form-control{
+	width: 500px;
+	height:50px;
+	font-size: 20px;
+	vertical-align:middel;
+	text-align:center;
+	resize: none;
+}
