@@ -1,0 +1,14 @@
+*{
+	padding: 0;
+	margin:auto;
+}
+h1{
+	text-align: center;
+}
+hr{
+	width: 80%;
+}
+.div{
+	align: center;
+	width: 400px;
+}
