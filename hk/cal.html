@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>计算器</title>
+	<link rel="stylesheet" type="text/css" href="css/cal.css"/>
+	<script type="text/javascript" src="js/cal.js"></script>
+	</head>
+	<body>
+		<h1 class="h1">计算器</h1>
+		<p class="h1">
+		<input type="text" id="num1" class="input1" placeholder="第一个数" />
+		<select id="nal">
+			<option value ="+">+</option>
+			<option value ="-">-</option>
+			<option value ="*">*</option>
+			<option value ="/">/</option>
+		</select>
+		<input type="text" id="num2" placeholder="第二个数" />
+		<input type="button" name="" id="btn" value="等于" onclick="jisuan()" />
+		<input type="text" id="result" readonly="true" placeholder="结果" />
+		</p>
+	</body>
+</html>
