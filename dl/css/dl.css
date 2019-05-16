@@ -1,0 +1,35 @@
+@charset "utf-8";
+h1{
+	font-family: 楷体;
+	font-size: 36px;
+	text-align:center;
+	color: black;
+	
+}
+hr{
+	width:500px;
+	background-color:slateblue;
+	height:1px;
+}
+body{
+	background-color: skyblue;
+}
+.box{
+	text-align: center;
+	border: 1px gray solid;
+	width:400px;
+	padding-top: 30px;
+	background-color: skyblue;
+	margin:auto;
+	
+}
+#username,#password{
+	font-size: 20px;
+}
+input[type=submit]{
+	width:120px;
+	height: 30px;
+	color: black;
+	background-color: skyblue;
+	
+}
