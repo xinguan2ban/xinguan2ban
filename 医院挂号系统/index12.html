@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>挂号预约</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/yuyue.css" />
+<LINK rel=stylesheet type=text/css href="css/datepicker.css">
+<SCRIPT type=text/javascript  src="js/jquery-1.6.2.min.js"></SCRIPT>
+<SCRIPT type=text/javascript  src="js/jquery.datepicker-mi.js"></SCRIPT>
+<SCRIPT type=text/javascript  src="js/form.js"></SCRIPT>
+</head>
+
+<body>
+<div class="yuyue_box">
+  
+  <div class="telcon">
+    <div class="tell">
+      <div class="ts"> <span>提示:</span>
+        <p>您所填资料将会被保密，请放心填写。<br />
+          请填写详细的病情资料，通话前我们会将您的资料提供给医生，<br />
+          方便我们提前了解您的病情，为您推荐更适合的医生。</p>
+      </div>
+      <div class="telform" >
+        <form action="#" method="post" onSubmit="return check();">
+          <input type="hidden" name="sectionid" value="41">
+          <input type="hidden" name="orderExpert" value="81">
+          <div class="telc">
+            <label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
+            <input type="text" d="name" id="name" value="" name="name" />
+          </div>
+          <div class="">
+            <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+            <input type="radio" checked="checked" class="sontelxb" value="男" name="sex" />
+            &nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="sex" type="radio" value="nv" />
+            &nbsp;女</div>
+          <div class="telc">
+            <label>年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄:</label>
+            <input type="text" id="ageses" value="" name="age" />
+          </div>
+          <div class="telc" style=" margin-bottom:2px">
+            <label>联系电话：</label>
+            <input  id="tel" type="text" value="" name="tel" />
+          </div>
+          <p style=" margin-top:1px;color:#4D74B7">*请准确填写，此号码为与您联系的号码</p>
+          <div class="telrq">
+            <label>预约日期：</label>
+            <input type="text" id="time" class="date-pick" 	onclick="this.value='';this.style.color='black';this.style.background='images/420bf521c6dd4a13ac016894278546d0.gif';" value="点击选择预约门诊时间" name="orderTime" />
+          </div>
+          <div class="telbq">
+            <label>病情描述：</label>
+            <textarea name="description"></textarea>
+          </div>
+          <p style="color:#4D74B7">*请尽量详细填写病情，方便我们更好的了解您的病情</p>
+          <input type="submit" name="sub" value=" " class="tijiao" />
+          <script language=javascript>
+			<!--
+			var url = document.referrer;
+			document.writeln("<input type=\"hidden\" name=\"URL\" value="+url+">");
+			//-->
+			</script>
+        </form>
+      </div>
+      
+    </div>
+   
+ </div>
+    <div style="clear:both"></div>
+  </div>
+ 
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿*{ margin:0; padding:0; font-size:12px;}
+ body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td,font,form,p,h1,h2,h3,h4,h5,h6 {padding:0px; margin:0;}
+img{border:0;}
+
+input,textarea { border:none; border:0; font-size:14px; color:#999; padding-left:5px}
+.yuyue_box{ margin:0 auto; width:1366px; background-color:#F1F1F1}
+.yuyue_head{ margin:0 auto; width:1366px; height:86px;}
+.telcon { width:970px; margin:auto; height:700px; }
+.tell { width:470px; float:left; padding:10px; margin-top:1px }
+.tell .ts { height:80px; overflow:hidden; margin-top:8px}
+.tell .ts span{ background:url(../images/yuyue_10.jpg) no-repeat left center; height:19px; padding-left:18px; line-height:19px; float:left;display:block; width:40px; font-weight:bold; color:#F77B00 }
+.tell .ts p { width:400px;  float:left; color:#676767; line-height:160% }
+.telform { width:370px; margin-left:50px; overflow: hidden; margin-bottom:20px}
+.telform label{  color:#323232; height:26px; line-height:26px; text-align:center; font-size:15px; width:80px; float:left; display:block; font-size:14px; font-family:"微软雅黑"}
+.telc { margin:10px 0; width:500px;  height:32px;}
+.telc input{ background:url(../images/yuyue_14.jpg) no-repeat; width:271px; height:26px; line-height:26px; float:left}
+.telxb {color:#0152A4; line-height:26px; }
+.telrq { color:#A50004; margin:10px 0; cursor:pointer}
+.telrq input { width:140px; height:26px; line-height:26px; background:url(../images/yuyue_14.jpg) no-repeat; color:#999; }
+.telrq span{ padding-left:9px}
+.telbq textarea { background: url(../images/yuyue_21.jpg) no-repeat; width:271px; height:128px}
+.telform p { height:16px; color:#A50004; margin-left:80px; margin-top:10px;}
+.tijiao { background:url(../images/yuyue_24.jpg) no-repeat; width:101px; height:32px; float:right; margin-top:10px; cursor:pointer}
+.bdz { background:url(../images/yuyue_28.jpg) no-repeat; width:425px; height:148px}
+.bdz01 {  width:230px; height:36px;line-height:32px; padding-left:5px;color:#666;  margin-top:97px; margin-left:80px; background:url(../images/tes.jpg)  no-repeat; border:none; float:left  }
+
+.bdz02 { width:83px; height:37px;  background:url(../images/bzd.jpg) no-repeat; cursor:pointer; margin-left:5px; float:left; margin-top:95px }
+.footel { height:118px; background:url(../images/foottel.jpg) repeat-x;padding-top:30px;}
+.footel div { height:18px; line-height:18px; color:#666; background:url(../images/yuyue_33.jpg) no-repeat left center; padding-left:65px; width:840px; margin:0 auto;}
+.footel p { color:#fff; font-size:18px; letter-spacing:1px; width:300px; margin:28px auto; font-family:"微软雅黑"}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/TeacherInfo.css"/>
+		<style type="text/css">
+			body,input{
+		margin: 0;
+		padding: 0;
+		background: #F4F9F4;
+	}
+	input{
+		display: inline-block;
+		background: #fff;
+	}
+	.xiao-container{
+		width: 100%;
+	}
+	.xiao-register-box{
+position: relative;
+		height: 700px;
+		width: 700px;
+		top: 50px;
+		margin: 0 auto;
+		z-index: 99999;
+		background:#ffffff;
+		border: 7px solid #ccc;
+	}
+	.xiao-title-box{
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		margin-left: 200px;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 28px;
+		font-weight: 800;
+		color: #A7D7C4;
+		line-height: 50px;
+	}
+	.xiao-username-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:100px;
+		margin-left:160px;
+		font-weight: 700;
+	}
+	.xiao-username-input{
+		display: inline-block;
+		margin-left: 25px;
+		/*background: green;*/
+	}
+	#username{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+
+.xiao-userPassword-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:180px;
+		margin-left:160px;
+		font-weight: 700;
+	}
+	.xiao-userPassword-input{
+		display: inline-block;
+		margin-left: 61px;
+	}
+	#userPassword{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.xiao-userRePassword-box{
+
+        position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:260px;
+		margin-left:160px;
+		font-weight: 700;
+	}
+	.xiao-userRePassword-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+	#userRePassword{
+		height: 35px; 
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.xiao-userPhone-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:340px;
+        margin-left:160px;
+		font-weight: 700;
+	}
+	.xiao-userPhone-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+	#userPhone{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.xiao-userEmail-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:420px;
+		margin-left:160px;
+		font-weight: 700;
+	}
+
+    .xiao-userEmail-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+	#userEmail{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+ 
+	.xiao-userGender-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:500px;
+		margin-left:160px;
+		font-weight: 700;
+}
+	.xiao-userGender-input{
+		display: inline-block;
+		margin-left: 62px;
+	}
+	.xiao-require{
+		color: red;
+	}
+	.xiao-submit-box{
+		position:absolute;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 540px;
+		margin-left:220px;
+		border-radius: 5px;
+		background: grey;
+	}
+	#xiao-submit-button{
+		display: inline-block;
+		width: 80px;
+         height: 40px;
+		border-radius: 5px;
+		background: #A7D7C4;
+	}
+	.xiao-goLogin-box{
+		position:absolute;
+		width: 150px;
+		height: 20px;
+		margin-top: 390px;
+		margin-left:400px;
+ 
+	}
+.xiao-submit-box1{
+		position:absolute;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 540px;
+		margin-left:350px;
+		border-radius: 5px;
+		background: grey;
+	}
+	#xiao-submit-button1{
+		display: inline-block;
+		width: 80px;
+         height: 40px;
+		border-radius: 5px;
+		background: #A7D7C4;
+	}
+	
+table{width: 90%;background: #ccc;margin: 10px;border-collapse: collapse;}
+
+th, td {height:35px;line-height:35px;text-align:center;border:1px solid #ccc;}
+
+th{background: #eee;font-weight: normal;}
+
+tr{background: #fff;}
+
+tr:hover{background: #EEE;}
+		</style>
+	</head>
+	<body>
+		<div class="container flgure">
+			<div class="content">
+				<ul class="clearfix info">
+					<li class="active">医生管理</li>
+					<li>医生信息</li>
+				</ul>
+				<div class="basic">
+					<div class="basicInfo select active">
+						
+						<div class="xiao-container">
+		<div class="xiao-register-box">
+			<div class="xiao-title-box">
+				<span>添加医生信息</span>
+			</div>
+			<form action="#" method="post">
+				<div class="xiao-username-box">
+				
+					<label for="username">医生名称</label>
+					<div class="xiao-username-input">
+						<input type="text" id="username"  name="username" placeholder="请输入用户名 长度:6-12个字符" />
+					</div>
+					<span id="usernameSpan"></span>
+				</div>
+				
+
+          <div class="xiao-userPassword-box">
+				
+					<label for="userPassword">所属科室</label>
+					<div class="xiao-userPassword-input">
+						<select style="margin-left:-35px;" id="userRePassword">
+								<option value="学生" selected="selected" style="background: #eee;">内科</option>
+								<option value="教师教辅人员">外科</option>
+								<option value="教师教辅人员">神经科</option>
+							</select>
+					</div>
+				</div>
+ 
+				<div class="xiao-userRePassword-box">
+				
+						<label for="userRePassword">挂号费用</label>
+					<div class="xiao-userRePassword-input">
+						<input type="text" id="userPhone" name="userPhone" placeholder="请输入挂号费用" />
+					</div>
+				</div>
+              <div class="xiao-userPhone-box">
+				
+					<label for="userPhone">出诊日期</label>
+					<div class="xiao-userPhone-input">
+					<input type="text" id="userPhone" name="userPhone" placeholder="请输入" />
+					</div>
+					<span id="usernameSpan"></span>
+				</div>
+				
+				<div class="xiao-userEmail-box">
+					
+					<label for="userEmail">总&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp号</label>
+					<div class="xiao-userEmail-input">
+						<input type="text" id="userEmail" name="userEmail" placeholder="请输入医生的总号：" />
+					</div>
+				</div>
+
+				<div class="xiao-submit-box">
+					<input id = "xiao-submit-button" type="submit" value="添 加">
+				</div>
+				
+				<div class="xiao-submit-box1">
+					<input id = "xiao-submit-button1" type="submit" value="返 回">
+				</div>
+			</form>
+		</div>
+	</div>
+			
+						
+						<ol>
+							<li class="active">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>&gt;</li>
+						</ol>
+						
+						
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="payInfo select">
+						
+						
+					<div class="container">
+			<div class="content">
+				<div class="bx">
+					<div class="box">
+						<div class="top">
+							<div class="left">当前位置>医生信息</div>
+
+						</div>
+						<div class="content">
+							
+						</div>
+						&nbsp;&nbsp;&nbsp;按天数查询：<input type="text" id='text' name='text' />
+						<input type="button" id="button"name="button" value="查询"/>
+						<br/>
+						<div class="bottom">
+							<table class="table" border='1' style="width:700px ">
+							
+								<thead>
+                          <tr><th colspan="5">医生信息</th></tr>
+									<tr>
+										<th>序号</th>
+										<th>医生姓名</th>
+										<th>所属科室</th>
+										<th>挂号费用</th>
+										<th>出诊日期&nbsp;&nbsp;&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+
+										<td> 1 </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td> 2</td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td> 3 </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td> 4 </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td>5 </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td> 6 </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+										<td> </td>
+									</tr>
+									<tr>
+
+										<td colspan="6"> 共6条数据 共分为 页</td>
+
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+						
+						
+						
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.info li').click(function() {
+				$(this).addClass("active").siblings().removeClass("active");
+				$('.basic .select').eq($("ul li").index(this)).addClass("active").siblings().removeClass("active")
+			});
+			$('.basicInfo ol').on('click','li',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+			$('.payInfo ol').on('click','li',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		</script>
+	</body>
+</html>
