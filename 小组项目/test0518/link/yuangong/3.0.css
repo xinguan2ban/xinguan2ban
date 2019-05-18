@@ -1,0 +1,9 @@
+.nav li{
+	padding: 0px 0.05px;
+	float:left;
+	list-style: none;
+	color: black;
+}
+.box{
+	text-align:center;
+}

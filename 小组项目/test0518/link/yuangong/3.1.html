@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>员工请假页面</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjmdfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/3.0.js"></script>
+		</head>
+	<body> 
+	     <h1 for="exampleInputName2" class="col-md-offset-4 col-md-8">员工请假页面</h1>
+	   <form class="form-inline">
+		   <!-- 第一行-->
+		   <div class="col-sm-offset-2 col-sm-10">
+			<p><div class="form-group">
+				<label for="exampleInputName2">员工编号</label>
+				<input type="text" class="form-control" placeholder="1">
+			</div>
+			<div class="form-group col-sm-offset-1">
+				<label for="exampleInputEmail2">员工姓名</label>
+				<input type="text" class="form-control" placeholder="jane">
+			</div>
+			 </p></div>
+			 <!-- 第二行-->
+			<div class="col-sm-offset-2 col-sm-10">
+			<p><div class="form-group">
+				<label for="exampleInputName2">部门名称</label>
+				<div class="form-group">
+				<select class="form-control" style="width: 196px;">
+					<option>人事部</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select></div>
+			</div>
+				<div class="form-group col-sm-offset-1">
+				<label for="exampleInputEmail2">请假方式</label>
+				<div class="form-group">
+				<select class="form-control" style="width: 196px;">
+					<option>生病</option>
+					<option>出差</option>
+					<option>旅游</option>
+					<option>红白事</option>
+					<option>其他</option>
+				</select></div>
+			</div>
+			</p></div>
+			<!-- 第三行 -->
+			<div class="col-sm-offset-2 col-sm-10">
+			<p><div class="form-group">
+				<label for="exampleInputName2">开始时间</label>
+				<input type="date" class="form-control" value="2019-05-18" style="width: 196px;"/>
+			</div>
+				<div class="form-group col-sm-offset-1">
+				<label for="exampleInputEmail2">结束时间</label>
+				<input type="date" id="date" class="form-control" value="2019-05-18" style="width: 196px;"/>
+			</div>
+			</p></div>
+			<!-- 第四行 -->
+			<div class="col-sm-offset-2 col-sm-10">
+			<p><div class="form-group">
+				<label for="exampleInputName2">请假事由</label>
+				<textarea class="form-control" rows="3" cols="72"  style="resize:none" >感冒请假</textarea>
+			</div>
+			</p></div>
+		<div class="col-md-offset-4 col-md-8">
+	     <button type="submit" class="btn btn-primary" onclick="huoqu()">提交</button> 
+	     	<button type="reset" class="btn btn-danger col-md-offset-2">取消</button>
+	   	</div>
+		</form>
+	     
+	 
+	</body>
+</html>

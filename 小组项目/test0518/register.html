@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+
+		<!-- 导入 js 库（使用菜鸟教程提供的CDN） -->
+		<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+		<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+		<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+	</head>
+	<body>
+
+		<h2 class="text-center">注册</h2>
+
+
+		<hr />
+
+
+
+
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<label for="account" class="col-sm-2 control-label">账号</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="account" placeholder="请输入账号" required="true" minlength="6" maxlength="12">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<label for="password" class="col-sm-2 control-label">密码</label>
+					<div class="col-sm-8">
+						<input type="password" class="form-control" id="password" placeholder="请输入密码" required="true" minlength="6"
+						 maxlength="18">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<label for="email" class="col-sm-2 control-label">邮箱</label>
+					<div class="col-sm-8">
+						<input type="email" class="form-control" id="email" placeholder="请输入邮箱" required="true" minlength="6" maxlength="18" email="true">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<label for="phone" class="col-sm-2 control-label">手机</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="phone" placeholder="请输入手机号" required="true" minlength="11" maxlength="11" >
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9">
+					<a href="login.html"><button type="button" class="btn btn-default col-sm-2 col-sm-offset-1">登录</button></a>
+					<button type="submit" class="btn btn-default col-sm-2 col-sm-offset-2">注册</button>
+				</div>
+			</div>
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
+		<title>部门管理</title>
+	</head>
+	<body>
+		<table width="400"border="1"rules="groups">
+			<caption>
+				winner>部门管理
+			</caption>
+				<thead>
+					<tr>
+						<th>部门编码</th>
+						<th>部门名称</th>
+						<th>部门简介</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>4</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+<table>
+<tr><td>蒋兆旻</td></tr>
+            <tr>
+            <td><?php echo $row['蒋兆旻']; ?></td>           
+            </tr>
+<head>  
+    <script type="text/javascript"> 
+    function gotopage(currentpage){    
+    var pagesize=document.getElementById("pagesize").value;
+    window.location.href='${pageContext.request.contextPath}/servlet/ListCustomer currentpage='+currentpage+'&pagesize='+pagesize;
+    }
+    </script>
+  </head>
+ 
+<body>
+.........    
+共3条记录，
+    每页<input type="text" id="pagesize" value="${pagebean.pagesize}" onchange="gotopage(${pagebean.currentpage })" style="width:25px" maxlength="2">条记录,
+    共1页，当前第1页
+   
+<a href="javascript:void(0)" onclick="gotopage(${pagebean.previouspage})">上一页</a>
+ 
+ <c:forEachvar="index" items="${pagebean.pagebar }">
+         <c:if test="${pagebean.currentpage==index}">
+         </c:if>
+ 
+         <c:if test="${pagebean.currentpage!=index}">
+             <a href="javascript:void(0)" onclick="gotopage(${index})">${index }</a>
+         </c:if>
+ </c:forEach>
+ 
+ <a href="javascript:void(0)" onclick="gotopage(${pagebean.nextpage})">下一页</a>    
+ 
+ <input type="text" id="page" value="${pagebean.currentpage }">
+ <input type="button" value="GO" onclick="gotopage(document.getElementById('page').value)">
+
+  </body>
+		</table>
+	</body>
+</html>

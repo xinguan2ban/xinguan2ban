@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	</head>
+	<body>
+    <div class="container-fluid">
+        <h1>添加成员</h1>
+        
+        <hr />
+        <br />
+        
+        <form class="form-inline">
+        	
+        <div class="form-group">
+        	
+        <label for="exampleInputEmail2"> 姓名：</label>
+        <input type="text" id="username" class="form-control" />
+        
+        
+        <br />
+        <br />
+        
+         <label for="exampleInputEmail2">手机：</label>
+         <input type="text" id="phone" class="form-control" />
+         
+         
+        <br />
+        <br />
+        
+             <label for="exampleInputEmail2">部门：</label>
+             <select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+		     </select>
+		
+		&emsp;&emsp;
+		
+		<label for="exampleInputEmail2">性别：</label>
+	    <input type="radio" name="xinbie" value="nan" checked="checked" />男
+		<input type="radio" name="xinbie" value="nv" />女
+        
+        <br />
+        <br />
+        
+         <label for="exampleInputEmail2">邮箱：</label>
+         <input type="text" id="email" class="form-control" />
+              
+        <br />
+        <br />
+       
+        <button type="button" class="btn btn-primary" id="bt"><label for="exampleInputEmail2">确认添加</label></button>
+        
+        </form>
+       </div>
+    </div>
+	</body>
+</html>
