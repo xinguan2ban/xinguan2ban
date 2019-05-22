@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<script type="text/javascript" src="js/cal.js"></script>
+	</head>
+	<body>
+		
+		<p>用户名:<input name="user" id="xm" type="text" size="15" /></p>
+		<p>密&nbsp;&nbsp;&nbsp;&nbsp;码:<input name="pw" id="password" size="15" /></p>
+		<p>性别:男 <input type="radio" name="sex" value="1" />
+		女 <input type="radio" name="sex" value="2" /></p>
+		<p>爱好: <input name="fav1" type="checkbox" value="1" />唱歌
+		<input name="fav1" type="checkbox" value="2" />跳舞
+		<input name="fav1" type="checkbox" value="3" />rap
+		<input name="fav1" type="checkbox" value="4" />打篮球
+		</p>
+		<p>经常访问的网站： <select name="addr">
+			<option value="1">B站</option>
+			<option value="1">新浪</option>
+			<option value="1">虎扑</option>
+		</select>
+		</p>
+		<p><br><textarea name="sign"></textarea></p>
+		<p><input type="submit" name="Submit" value="注册" />
+		</p>
+		
+		<input type="button" onclick="clickme()" value="click me"/>
+		<br>
+		<br/>
+		<input type="text" id="one" placeholder="第一个数" />
+		
+		<select id="suanfa">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="%">%</option>
+		</select>
+		
+		<input type="text" id="two" placeholder="第二个数" />
+		<input type="button" value="=" id="deng"/>
+		<input type="text" id="result" />
+	</body>
+</html>
